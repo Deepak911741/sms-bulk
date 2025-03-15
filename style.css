@@ -61,6 +61,10 @@ body {
     border-radius: 10px;
 }
 
+.hero-section .hero-image .main-img{
+    width: 410px;
+    height: 526px;
+}
 
 .overlay-box {
     background: var(--primary-color);
@@ -85,27 +89,176 @@ body {
 .floating-card {
     position: absolute;
     background: white;
-    padding: 12px;
+    /* padding: 12px; */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
+    width: 400px;
 }
 
-.card-1 {
-    top: 10%;
-    left: 70%;
-    width: 140px;
+.input-label {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
 }
+
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.send-btn {
+    background-color: #36b37e;
+    color: white;
+    border: none;
+    width: 64px;
+    height: 28px;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bottom-border {
+    width: 100%;
+    height: 1px;
+    background-color: #d1d1d1;
+    margin-top: 8px;
+}
+
+.card-1{
+    top: 2%;
+    right: 80%;
+    width: 262px;
+    height: 90px;
+    padding: 12px;
+}
+
 .card-2 {
-    bottom: 15%;
-    left: 10%;
+    bottom: 8%;
+    right: 80%;
     width: 120px;
+    padding: 12px;
 }
 .card-3 {
-    bottom: 5%;
-    right: 10%;
-    width: 130px;
+    position: absolute;
+    bottom: 50%;
+    left: -15%;
+    height: 40px;
+    width: 40px;
+    padding: 11px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #4535AF;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-10deg);
 }
+
+.card-4 {
+    position: absolute;
+    bottom: -3%;
+    left: 60%;
+    height: 40px;
+    width: 40px;
+    padding: 11px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #FFAA94;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(20deg);
+}
+.card-5 {
+    position: absolute;
+    bottom: 80%;
+    left: 95%;
+    height: 59.49px;
+    width: 59.49px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #FBC75E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(20deg);
+}
+.card-6 {
+    position: absolute;
+    bottom: 10%;
+    left: 52%;
+    transform: rotate(20deg);
+}
+
+/* atm card start */
+
+
+.atm-card {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-color: #121723;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transform: rotate(-10deg);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.card-logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.overlap {
+    margin-left: -10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.card-number {
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 75px;
+    left: 15px;
+}
+
+.expiry-date {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* end */
+
+
+
+
+
 
 .cta-buttons {
     display: flex;
@@ -375,6 +528,7 @@ body {
 .benifites .transaction-card {
     bottom: -2%;
     left: -11%;
+    max-width: 280px;
     display: flex;
     align-items: center;
 }
@@ -383,6 +537,7 @@ body {
     bottom: 50%;
     left: -10%;
     display: flex;
+    width: 50px;
     align-items: center;
     transform: rotate(-10deg);
 }
@@ -676,10 +831,6 @@ body {
     }
 }
 
-.faq-section-start {
-    margin-top: 150px;
-    padding: 30px;
-} 
 
 .faq-section-start .faq-section {
     /* max-width: 900px; */
@@ -806,7 +957,7 @@ body {
         font-size: 14px;
         padding: 12px;
     }
-    .faq-section-start {
+    .faq-section-start .faq-section {
         padding: 60px;
     }
     
@@ -836,7 +987,7 @@ body {
         padding: 10px;
     }
 
-    .faq-section-start {
+    .faq-section-start .faq-section {
         padding: 40px;
     }
 }
@@ -859,7 +1010,7 @@ body {
         padding: 8px;
     }
     .faq-section-start {
-        padding: 20px;
+        padding: 0;
     }
 }
 
