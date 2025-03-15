@@ -89,7 +89,6 @@ body {
 .floating-card {
     position: absolute;
     background: white;
-    /* padding: 12px; */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     width: 400px;
@@ -192,11 +191,22 @@ body {
 .card-6 {
     position: absolute;
     bottom: 10%;
-    left: 52%;
-    transform: rotate(20deg);
+    left: 80%;
 }
 
-/* atm card start */
+@media (max-width: 768px) {
+    .card-1, .card-2 {
+        width: 80%;  
+        right: auto;
+        left: 10%;
+    }
+
+    .card-3, .card-4, .card-5 {
+        left: 50%;
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
 
 
 .atm-card {
@@ -1170,4 +1180,9 @@ body {
 
 .main-section-in-container{
     background: linear-gradient(260deg, var(--primary-color) 0%, #ffffff 50%);
+}
+
+
+.footer-section .custom-card .fa-coins{
+    color: var(--primary-color);
 }
